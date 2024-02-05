@@ -1,13 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CounterComponent } from "../../../shared/components/counter/counter.component";
+import { CounterComponent } from '../../../shared/components/counter/counter.component';
+import { WaveAudioComponent } from './../../components/wave-audio/wave-audio.component';
 
 @Component({
-    selector: 'app-about',
-    standalone: true,
-    templateUrl: './about.component.html',
-    styleUrls: ['./about.component.css'],
-    imports: [CommonModule, CounterComponent]
+  selector: 'app-about',
+  standalone: true,
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css'],
+  imports: [CommonModule, CounterComponent, WaveAudioComponent],
 })
 export class AboutComponent {
   duration = signal(1000);

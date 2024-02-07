@@ -83,7 +83,7 @@
       *ngFor="let product of cart()"
     >
       <div class="flex flex-col-reverse items-center">
-        <img class="w-14" [src]="product.image" [alt]="product.title" />
+        <img class="w-14" [src]="product.images[0]" [alt]="product.title" />
         <b>{{ product.title }}</b>
       </div>
       <div>
